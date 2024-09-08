@@ -41,8 +41,7 @@
         status = "okay";
         dr-gpios = <&arduino_header 15 (GPIO_ACTIVE_HIGH)>;
 
-        sensitivity = "2x";
-        no-taps;
+        sensitivity = "4x";
         sleep;
     };
 };
