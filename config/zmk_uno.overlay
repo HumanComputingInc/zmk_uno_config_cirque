@@ -14,6 +14,7 @@
 	/delete-node/ ls0xx@0;
 
 	status = "okay";
+	cs-gpios = <&arduino_header 16 GPIO_ACTIVE_LOW>;
 
 	cirque: cirque@0 {
 		compatible = "cirque,pinnacle";
