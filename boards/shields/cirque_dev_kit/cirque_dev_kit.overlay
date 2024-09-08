@@ -43,5 +43,6 @@
 
         sensitivity = "2x";
         sleep;
+        no-taps;
     };
 };
