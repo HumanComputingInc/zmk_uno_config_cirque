@@ -10,7 +10,7 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
-      remote: badjeff
+      remote: petejohanson
       revision: feat/pointers-move-scroll
       import: app/west.yml
     # Replace the one above with the commented one below when that branch gets merged
@@ -24,10 +24,6 @@ manifest:
     #   remote: badjeff
     #   revision: main
     - name: cirque-input-module
-      remote: badjeff
-      revision: main
-    # Allow to use a shield without any keymap/matrix.
-    - name: zmk-kscan-blackout
       remote: badjeff
       revision: main
   self:
