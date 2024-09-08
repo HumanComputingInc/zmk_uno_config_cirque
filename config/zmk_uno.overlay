@@ -1,0 +1,22 @@
+
+&arduino_spi {
+	/delete-node/ led_strip;
+	/delete-node/ ls0xx@0;
+
+	cirque: cirque@0 {
+		compatible = "cirque,pinnacle";
+		reg = <0>;
+		status = "okay";
+		spi-max-frequency = <1000000>;
+
+		dr-gpios = <&arduino_header 5 GPIO_ACTIVE_HIGH>;
+		sleep;
+	};
+};
+
+/ {
+    glidepoint_input {
+        compatible = "zmk,input-listener";
+        device = <&cirque>;
+    };
+};
