@@ -3,11 +3,13 @@
 	/delete-node/ led_strip;
 	/delete-node/ ls0xx@0;
 
+	status = "okay";
+
 	cirque: cirque@0 {
 		compatible = "cirque,pinnacle";
 		reg = <0>;
 		status = "okay";
-		spi-max-frequency = <1000000>;
+		spi-max-frequency = <4000000>;
 
 		dr-gpios = <&arduino_header 5 GPIO_ACTIVE_HIGH>;
 		sleep;
