@@ -24,7 +24,7 @@ manifest:
     #   remote: badjeff
     #   revision: main
     - name: cirque-input-module
-      remote: badjeff
+      remote: petejohanson
       revision: main
   self:
     path: config
