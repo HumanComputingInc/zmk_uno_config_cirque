@@ -28,7 +28,7 @@
         xy-swap;
         y-invert;
         x-invert;
-        scale-multiplier = <4> ;
+        scale-multiplier = <3> ;
     };
 };
 
@@ -42,8 +42,7 @@
         status = "okay";
         dr-gpios = <&arduino_header 15 (GPIO_ACTIVE_HIGH)>;
 
-        sensitivity = "4x";
+        sensitivity = "2x";
         sleep;
-        no-taps;
     };
 };
