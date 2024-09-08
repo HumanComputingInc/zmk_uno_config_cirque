@@ -3,6 +3,8 @@
 		/delete-node/ zmk,underglow;
 	};
 
+	/delete-node/ encoder;
+
     glidepoint_input {
         compatible = "zmk,input-listener";
         device = <&cirque>;
@@ -22,7 +24,7 @@
 		status = "okay";
 		spi-max-frequency = <1000000>;
 
-		dr-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH)>;
+		dr-gpios = <&arduino_header 15 (GPIO_ACTIVE_HIGH)>;
 		sensitivity = "2x";
 		sleep;
 		no-taps;
