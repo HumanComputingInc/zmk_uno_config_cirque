@@ -1,3 +1,13 @@
+/ {
+	chosen {
+		/delete-node/ zmk,underglow;
+	};
+
+    glidepoint_input {
+        compatible = "zmk,input-listener";
+        device = <&cirque>;
+    };
+};
 
 &arduino_spi {
 	/delete-node/ led_strip;
@@ -9,16 +19,12 @@
 		compatible = "cirque,pinnacle";
 		reg = <0>;
 		status = "okay";
-		spi-max-frequency = <4000000>;
+		spi-max-frequency = <1000000>;
 
-		dr-gpios = <&arduino_header 5 GPIO_ACTIVE_HIGH>;
+		dr-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH)>;
+		sensitivity = "2x";
 		sleep;
+		no-taps;
 	};
 };
 
-/ {
-    glidepoint_input {
-        compatible = "zmk,input-listener";
-        device = <&cirque>;
-    };
-};
