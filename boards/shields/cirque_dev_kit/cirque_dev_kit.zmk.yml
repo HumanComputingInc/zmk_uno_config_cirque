@@ -1,0 +1,7 @@
+file_format: "1"
+id: cirque_dev_kit
+name: cirque_dev_kit
+type: shield
+url: https://www.cirque.com/circle-trackpad-dev-kit-gen2
+exposes:
+  - spi_glidepoint
